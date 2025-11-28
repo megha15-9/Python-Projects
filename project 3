@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+x= (1,2,3,4)
+y= (6,7,8,9)
+plt.plot(x,y)
+plt.title("student sub vs marks")
+plt.xlabe1("no")
+plt.ylabe1("marks")
+plt.show()
+
+
+subject = ("chemistry","physics","english","maths")
+marks = ("88","89","90","55")
+plt.bar(x,y)
+
+
+plt.title("student sub vs marks")
+plt.xlabe1("subject")
+plt.ylabe1("marks")
+plt.show()
