@@ -1,0 +1,43 @@
+#calculator 
+
+print("Choice Your Operators\n1. Addition\n2.Subtraction\n3.Multiplication\n4.Division\nExit")
+n=int(input("Enter Your Operator:"))
+if n==1:
+    num1=int(input("Enter your first No.1:"))
+    num2=int(input("Enter your first No.2:"))
+    print(f'Your given No. is {num1} and {num2} and Sum is:{num1+num2}')
+elif n==2:
+    num1=int(input("Enter your first No.1:"))
+    num2=int(input("Enter your first No.2\nIs grater then No.1:"))
+    print(f'Your given No. is {num1} and {num2} and Sub is:{num1-num2}')
+elif n==3:
+    num1=int(input("Enter your first No.1:"))
+    num2=int(input("Enter your first No.2:"))
+    print(f'Your given No. is {num1} and {num2} and Mult. is:{num1*num2}')
+elif n==4:
+    num1=int(input("Enter your first No.1:"))
+    num2=int(input("Enter your first No.2\nIs grater then No.1:"))
+    print(f'Your given No. is {num1} and {num2} and div. is:{num1/num2}')
+else:
+    exit
+
+
+        ATM   
+
+c=1
+while True:
+    pin=1529
+    Amount=48145
+    print("Welcome\nAttempt",c)
+    pn=int(input("Enter Your PIN:"))
+    if pin==pn:
+        print(f'Your current Amount is:{Amount}')
+        draw=int(input("Enter Amount To Withdraw:"))
+        f=Amount-draw
+        print(f'Withdraw Amount is:{draw}\nYour Current Amount is:{f}')
+    else:
+        c+=1
+        print("You Enter Wrong PIN")
+        if c>3:
+          print("Your account is blocked for 24 hours")
+          break
