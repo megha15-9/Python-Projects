@@ -1,0 +1,19 @@
+#   speech recognisation 
+
+import pyttsx3
+
+speaker = pyttsx3.init()
+speaker.say("Megha ")
+speaker.runAndWait()
+import speech_recognition as sr
+
+with sr.Microphone() as source:
+    print("Start Speaking ..........")
+    voice = mic.listen(source)
+    text = mic.recognize_google(voice)
+    print ("You said this : ", text )
+
+
+
+import pywhatkit
+pywhatkit.sendwhatmsg_instantly("+917357338051","Hello mam , my code is running properly , Thank you")
