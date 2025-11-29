@@ -1,0 +1,2 @@
+import pywhatkit
+pywhatkit.sendwhatmsg_instantly("+917357338051","Hello mam , my code is running properly , Thank you")
