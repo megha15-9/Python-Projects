@@ -1,0 +1,39 @@
+import streamlit as st
+import  pandas as pd
+import matplotlib.pyplot  as plt
+st.title("streamlit app of vgu")
+st.text("welcome to our dashbaord")
+st.header("I am Megha")
+st.write("hellooooo bye",1+4)
+
+name= st.text_input("enter your name")
+age= st.number_input("enter your age")
+st.write("your name iss :",name,"your age",age)
+st.selectbox("enter a course:",["MBA","LLB","FORENSIC"])
+if st.button("click me"):
+    st.success("clicked button")
+file =st.file_uploader("upload your file")
+if file:
+    content= file.read()
+    st.write("file uploaded successfully")
+
+data= {"Name": [ "TOM","JACK","HARRY","POP"],"Marks" :[10,20,30,40]}
+df =pd.DataFrame(data)
+st.dataframe(df)
+data = pd.DataFrame({
+    "Marks" : [10,20,30,40]
+})
+
+st.line_chart(data)
+st.bar_chart(data)
+
+subject= ["python",["c++"],["java"]]
+
+color=st.color_picker(BLACK(0,0,0))
+audio=st.audio_input("record or upload")
+feedback=st.feedback()
+num=st.slider("select",0,100)
+                
+          
+
+
