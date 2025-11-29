@@ -1,0 +1,18 @@
+from twilio.rest import Client
+
+
+account_sid = "enter "
+auth_token = "enter"
+client = Client(account_sid, auth_token)
+
+
+to_number = input("Enter recipient phone number (with country code): ")
+message_body = input("Enter message: ")
+# Sending message
+message = client.messages.create(
+    body = message_body,
+    from_ = "enter" ,  # e.g. +18605551234
+    to = to_number
+)
+
+print(f"Message sent! SID: {message.sid}")
