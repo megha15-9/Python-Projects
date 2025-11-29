@@ -1,0 +1,15 @@
+import shutil  
+import os
+source = input("Enter the path of the file to transfer: ")
+if not os.path.isfile(source):
+    print("File does not exist!")
+else:
+    NEHA = input("Enter the NEHA folder path: ")
+    if not os.path.isdir(NEHA):
+        print("NEHA folder does not exist!")
+    else:
+        try:
+            shutil.copy(source, NEHA)
+            print("File transferred successfully!")
+        except Exception as e:
+            print("Error transferring file:", e)
