@@ -1,0 +1,10 @@
+k=float(input("enter a number"))
+km=float(input("enter a number"))
+Kilograms=float(input("enter a number"))
+f=k*(9/5)+32
+meter=1000*km
+Pounds = Kilograms * 2.20462
+print("f",f)
+print("meter",meter)
+print("pounds",Pounds)
+
